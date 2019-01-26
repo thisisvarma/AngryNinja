@@ -11,6 +11,12 @@ This Angry Ninja slack bot.. details yet to come
 1. install virtualbox
 2. install vagrant
 3. setup vagrant Environment(use my vagrant file from source code)
-4. install python
+4. install python3.x
+
+
+
+
+
+
 
 
