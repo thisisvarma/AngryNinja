@@ -1,0 +1,1 @@
+{"rsync":{"/vagrant":{"type":"rsync","guestpath":"/vagrant","hostpath":"/home/varma/Documents/GitHub/AngryNinja/Environment","disabled":false,"__vagrantfile":true,"owner":"vagrant","group":"vagrant"}}}
