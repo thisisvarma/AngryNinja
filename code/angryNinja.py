@@ -16,7 +16,6 @@ sc = slackclient.SlackClient(slack_token)
 
 try:
     parser = argparse.ArgumentParser(usage="This bot posts messages to desired slack channel")
-
     parser.add_argument('-c',\
                         '--channel',\
                         required=True,\
