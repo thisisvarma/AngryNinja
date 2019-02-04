@@ -8,7 +8,8 @@ configFile = '../conf.d/angryNinja.ini'
 conf = configparser.ConfigParser ()
 conf.read(configFile)
 
-slack_token = os.environ['SLACK_API_TOKEN']
+slack_token = SLACK_API_TOKEN
+#slack_token = os.environ['SLACK_API_TOKEN']
 print(slack_token)
 sc = slackclient.SlackClient(slack_token)
 
