@@ -8,8 +8,8 @@ configFile = '../conf.d/angryNinja.ini'
 conf = configparser.ConfigParser ()
 conf.read(configFile)
 
-slack_token = SLACK_API_TOKEN
-#slack_token = os.environ['SLACK_API_TOKEN']
+#slack_token = SLACK_API_TOKEN
+slack_token = os.environ['SLACK_API_TOKEN']
 print(slack_token)
 sc = slackclient.SlackClient(slack_token)
 
@@ -49,7 +49,7 @@ def postmessage(channel, msg):
 
 def findchannel(channel):
 
-    ''' This functions find existence of channel '''
+    ''' This function finds existence of channel '''
 
     get_channel_list = sc.api_call("channels.list")
     for i in get_channel_list['channels']:
@@ -64,6 +64,6 @@ def findchannel(channel):
 
 if __name__ == '__main__':
 
-    print("finding channels exists, wait a sec..")
+    print("finding channel from Org, wait a sec..")
     findchannel(args.channel)
 
